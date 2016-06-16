@@ -60,7 +60,7 @@ but now we add the new class for a square
 if we want to calculate Square’s area, we can not do it with the current method in Operations class since we only have the value of one size and our method is expecting to have 2 values, one for the width and one for the height.
 
 # 5 we create an adapter 
-the adapter is to assign to width and height the same value in our square size, we know square’s sizes are the same value and we can reuse the formula in rectangle are ny simply converting the square in a rectangle object and passing the size value in both parameters.
+the adapter is going to assign to width and height the same value in our square size, we know square’s sizes are the same value and we can reuse the formula in rectangle are by simply converting the square in a rectangle object and passing the size value in both parameters.
 
 ![alt text][AreaAdapter]
 
@@ -79,7 +79,7 @@ the adapter is to assign to width and height the same value in our square size, 
 You can use the adapter design pattern when an object wants to reuse a class with an incompatible interface. The pattern can also be used where you want to reuse a previously existing functionality.
 
 
-Ok, this was a simple example and as you noticed we are not even using interfaces so for the particular example, to create an adapter is kind of the example of the guy going from his house to his neighbor. The goal was to understand the pattern so if you have such a simple situation maybe a pattern will add unnecessary complexity.
+Ok, this was a simple example and as you noticed we are not even using interfaces, to create an adapter is kind of the situation of the guy going from his house to his neighbors. The goal was to understand the pattern so if you have such a simple situation maybe a pattern will add unnecessary complexity.
 
 Now let’s think in an example in your current project..
 Can you identify some class inside your code expecting an specific type of object and you actually have that object but with a different interface?
