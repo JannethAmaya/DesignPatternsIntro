@@ -21,7 +21,7 @@ It makes an existing functionality reusable.
 It’s like this adapter.. it’s a ‘bridge’ between two objects
 ![alt text][adapter]
 
-[adapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png
+[adapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapterImage.png
 
 
 Let’s practice, we are going to follow a pretty simple example that helped me to understand this pattern easily, we are not going to adapt complex classes/objects since the goal here is to understand the pattern itself.
@@ -33,19 +33,19 @@ I’m placing some code examples in C#, they are really expressive and it should
 # 1 Create a class for a Rectangle
 ![alt text][rectangle]
 
-[rectangle]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/rectangle.png"
+[rectangle]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/rectangle.png
 
 # 2 Create a class for Operations
 ![alt text][operations]
 
-[operations]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/Operations.png"
+[operations]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/Operations.png
 
 
 # 3 we calculate the Rectangle area 
 We can do this by consuming current method in Operations class… 
 ![alt text][GetARea]
 
-[GetArea]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/initialMain.png"
+[GetArea]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/initialMain.png
 
 so far so good, right?
 
@@ -54,7 +54,7 @@ but now we add the new class for a square
 # 4 create a class for square
 ![alt text][Square]
 
-[Square]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/square.png"
+[Square]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/square.png
 
 
 if we want to calculate Square’s area, we can not do it with the current method in Operations class since we only have the value of one size and our method is expecting to have 2 values, one for the width and one for the height.
@@ -64,14 +64,14 @@ the adapter is to assign to width and height the same value in our square size, 
 
 ![alt text][AreaAdapter]
 
-[AreaAdapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png"
+[AreaAdapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png
 
 
 
 # 6 Now we can consume it to get our results:
 ![alt text][execution]
 
-[execution]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/main.png"
+[execution]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/main.png
 
 
 
