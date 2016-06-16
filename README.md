@@ -1,4 +1,4 @@
-# introduction to Design Patterns
+# Introduction to Design Patterns
 
 This is a small guide to help you get understand Adapter Design Pattern
 
@@ -19,7 +19,9 @@ It enables two or more incompatible objects to interact with each other.
 It makes an existing functionality reusable.
 
 It’s like this adapter.. it’s a ‘bridge’ between two objects
-<adapter image here>
+![alt text][adapter]
+
+[adapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png"
 
 
 Let’s practice, we are going to follow a pretty simple example that helped me to understand this pattern easily, we are not going to adapt complex classes/objects since the goal here is to understand the pattern itself.
@@ -29,21 +31,30 @@ I’m placing some code examples in C#, they are really expressive and it should
 
 
 # 1 Create a class for a Rectangle
-<public class Rectangle here>
+![alt text][rectangle]
+
+[rectangle]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/rectangle.png"
 
 # 2 Create a class for Operations
-<public class Operations here>
+![alt text][operations]
+
+[operations]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/Operations.png"
 
 
-# 3 we calculate the Rectangle area by consuming current method in Operations class… 
+# 3 we calculate the Rectangle area 
+We can do this by consuming current method in Operations class… 
+![alt text][GetARea]
 
+[GetArea]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/initialMain.png"
 
 so far so good, right?
 
 
 but now we add the new class for a square
 # 4 create a class for square
- <public class Square here>
+![alt text][Square]
+
+[Square]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/square.png"
 
 
 if we want to calculate Square’s area, we can not do it with the current method in Operations class since we only have the value of one size and our method is expecting to have 2 values, one for the width and one for the height.
@@ -51,16 +62,16 @@ if we want to calculate Square’s area, we can not do it with the current metho
 # 5 we create an adapter 
 the adapter is to assign to width and height the same value in our square size, we know square’s sizes are the same value and we can reuse the formula in rectangle are ny simply converting the square in a rectangle object and passing the size value in both parameters.
 
-<public class CalculatorAdapter here>
+![alt text][AreaAdapter]
+
+[AreaAdapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png"
 
 
 
 # 6 Now we can consume it to get our results:
-Square square = new Square();
-square.Size = 6; //test with any value
-CalculatorAdapter adapter = new CalculatorAdapter();
-int area = adapter.GetArea(square);
-return area; <— this is our result
+![alt text][execution]
+
+[execution]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/main.png"
 
 
 
