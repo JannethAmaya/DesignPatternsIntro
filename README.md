@@ -48,7 +48,8 @@ but now we add the new class for a square
 
 if we want to calculate Square’s area, we can not do it with the current method in Operations class since we only have the value of one size and our method is expecting to have 2 values, one for the width and one for the height.
 
-# 5 we create an adapter to assign to width and height the same value in our square size, we know square’s sizes are the same value and we can reuse the formula in rectangle are ny simply converting the square in a rectangle object and passing the size value in both parameters.
+# 5 we create an adapter 
+the adapter is to assign to width and height the same value in our square size, we know square’s sizes are the same value and we can reuse the formula in rectangle are ny simply converting the square in a rectangle object and passing the size value in both parameters.
 
 <public class CalculatorAdapter here>
 
