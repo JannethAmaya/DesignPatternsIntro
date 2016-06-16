@@ -21,7 +21,7 @@ It makes an existing functionality reusable.
 It’s like this adapter.. it’s a ‘bridge’ between two objects
 ![alt text][adapter]
 
-[adapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png"
+[adapter]: https://github.com/JannethAmaya/DesignPatternsIntro/blob/master/adapter.png
 
 
 Let’s practice, we are going to follow a pretty simple example that helped me to understand this pattern easily, we are not going to adapt complex classes/objects since the goal here is to understand the pattern itself.
