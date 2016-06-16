@@ -26,7 +26,7 @@ It’s like this adapter.. it’s a ‘bridge’ between two objects
 
 Let’s practice, we are going to follow a pretty simple example that helped me to understand this pattern easily, we are not going to adapt complex classes/objects since the goal here is to understand the pattern itself.
 The goal is to follow the example and create it with any language you’re like to try.
-If you don’t have anything installed at this moment, you can try with the C# code in examples and this page csharppad.com
+If you don’t have anything installed at this moment, you can work in teams.
 I’m placing some code examples in C#, they are really expressive and it should be easy to read, but if you never worked with C# before and have questions about what it’s doing then you can ask me, also you can work in teams.
 
 
