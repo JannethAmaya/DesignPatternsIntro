@@ -83,9 +83,9 @@ Ok, this was a simple example and as you noticed we are not even using interface
 
 Now let’s think in an example in your current project..
 Can you identify some class inside your code expecting an specific type of object and you actually have that object but with a different interface?
-let’s now to think in our adapter, if we are able to create one we’ll allow the classes work together.
+let’s now think in our adapter, if we are able to create one we’ll allow the classes work together.
 
-This is a very common pattern and maybe you already implemented it wit out know it was a pattern, didn't you?
+This is a very common pattern and maybe you already implemented it without know it was a pattern, didn't you?
 
 Warning: you should implement this pattern only if your classes/objects are similar, if you are creating a very big and complex adapter maybe that’s not the best solution.
 
