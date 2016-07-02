@@ -91,4 +91,9 @@ Warning: you should implement this pattern only if your classes/objects are simi
 
 
 
+#Some recommended books:
+Design Patterns: Elements of Reusable Object-Oriented Software
+by John Vlissides, Ralph Johnson, Richard Helm, Erich Gamma
 
+Head First Design Patterns
+by Elisabeth Freeman
